@@ -1,4 +1,5 @@
-import Home from "./Pages/Homepage/Home"
+import React from 'react'
+import Home from './Pages/Homepage/Home'
 
 const App = () => {
   return (
