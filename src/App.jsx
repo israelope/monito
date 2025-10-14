@@ -1,11 +1,9 @@
-import React from 'react'
-  import SearchBar from './Search'
+import Home from "./Pages/Homepage/Home"
 
 const App = () => {
   return (
     <>
-    <div className='bg-green-500 h-screen'>App</div>
-    <SearchBar/>
+    <Home/>
     </>
   )
 }
