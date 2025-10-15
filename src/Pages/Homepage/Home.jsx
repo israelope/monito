@@ -9,17 +9,22 @@ import Sellers from "./Sellers"
 
 const Home = () => {
   return (
-    <> 
-    <Navbar/>
-    <Hero/>
-    <More/>
-    <Friend/>
-    <Products/>
-    <Sellers/>
-    <Friend/>
-    <Blog/>
-    <Footer/>
-    </>
+    <main>
+      <div className='px-20 py-5'>
+      <Navbar />
+      </div>
+      <div className='p-20'>
+        <Hero />
+        <More />
+        <Friend />
+        <Products />
+        <Sellers />
+        <Friend />
+        <Blog />
+      </div>
+      
+        <Footer />
+    </main>
   )
 }
 
