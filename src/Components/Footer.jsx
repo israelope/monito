@@ -1,16 +1,16 @@
 
-import { FaPlayCircle, FaSearch, FaChevronDown, FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPaw, FaGift } from 'react-icons/fa';
-
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube} from 'react-icons/fa';
+import Logo from '../assets/icons/Logo.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FCEED5] pt-16">
+    <footer className="bg-[#FCEED5] pt-20 px-30 pb-5">
             <div className="container mx-auto px-4">
                 <div className="bg-[#003459] text-white p-8 rounded-2xl flex flex-col lg:flex-row justify-between items-center">
-                    <h2 className="text-3xl font-bold text-center lg:text-left">Register Now So You Don't Miss Our Programs</h2>
-                    <div className="bg-white p-2 rounded-xl mt-6 lg:mt-0 flex w-full max-w-lg">
+                    <h2 className="text-2xl font-bold text-center lg:text-left w-full">Register Now So You Don't Miss <br />Our Programs</h2>
+                    <div className="bg-white p-2 rounded-xl mt-6 lg:mt-0 flex w-full min-w-lg">
                         <input type="email" placeholder="Enter your Email" className="w-full p-3 rounded-lg text-gray-800 focus:outline-none"/>
-                        <button className="bg-[#003459] p-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">Subscribe Now</button>
+                        <button className="bg-[#003459] p-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition-colors cursor-pointer ">Subscribe Now</button>
                     </div>
                 </div>
     
@@ -33,7 +33,7 @@ const Footer = () => {
     
                 <div className="flex flex-col md:flex-row justify-between items-center py-6 text-center">
                     <p className="text-gray-600 text-sm">&copy; 2025 Monito. All rights reserved.</p>
-                    <img src="https://i.imgur.com/b2d2yvE.png" alt="Monito Logo" className="h-10 my-4 md:my-0"/>
+                    <img src={Logo} alt="Monito Logo" className="h-10 my-4 md:my-0"/>
                     <div className="flex space-x-6 text-[#00171F] font-semibold">
                         <a href="#" className="hover:underline">Terms of Service</a>
                         <a href="#" className="hover:underline">Privacy Policy</a>

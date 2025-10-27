@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaAngleDown, FaAngleRight } from 'react-icons/fa';
 import { Header, Footer, PetCard } from './Components/SharedComponents';
 import { petsData } from './Constants/Index';
@@ -36,23 +36,23 @@ const CategoryPage = () => {
             return { ...prev, [filterType]: value };
         });
     };
-    
+
     const totalPages = Math.ceil(filteredPets.length / itemsPerPage);
 
     return (
         <div className="bg-[#FDFDFD]">
             <Header />
             <div className="container mx-auto px-4 py-8">
-                 <div className="relative bg-[#003459] rounded-2xl overflow-hidden h-64 text-white p-8 flex items-center mb-8">
-                    <h2 className="text-4xl font-bold z-10">One More Friend<br/>Thousands More Fun!</h2>
-                    <img src="https://i.imgur.com/T0ianaU.png" alt="Group of puppies" className="absolute right-0 bottom-0 h-full object-cover"/>
+                <div className="relative bg-[#003459] rounded-2xl overflow-hidden h-64 text-white p-8 flex items-center mb-8">
+                    <h2 className="text-4xl font-bold z-10">One More Friend<br />Thousands More Fun!</h2>
+                    <img src="https://i.imgur.com/T0ianaU.png" alt="Group of puppies" className="absolute right-0 bottom-0 h-full object-cover" />
                 </div>
                 <div className="flex flex-col lg:flex-row gap-8">
                     <aside className="w-full lg:w-1/4 bg-white p-6 rounded-lg shadow-sm">
                         <h3 className="text-xl font-bold text-[#00171F] mb-4">Filter</h3>
-                        <div className="mb-6"><h4 className="font-bold mb-2">Gender</h4><label className="flex items-center"><input type="radio" name="gender" onChange={() => handleFilterChange('gender', 'male')} checked={filters.gender === 'male'} /><span>Male</span></label><label className="flex items-center"><input type="radio" name="gender" onChange={() => handleFilterChange('gender', 'female')} checked={filters.gender === 'female'}/><span>Female</span></label></div>
+                        <div className="mb-6"><h4 className="font-bold mb-2">Gender</h4><label className="flex items-center"><input type="radio" name="gender" onChange={() => handleFilterChange('gender', 'male')} checked={filters.gender === 'male'} /><span>Male</span></label><label className="flex items-center"><input type="radio" name="gender" onChange={() => handleFilterChange('gender', 'female')} checked={filters.gender === 'female'} /><span>Female</span></label></div>
                         <div className="mb-6"><h4 className="font-bold mb-2">Color</h4> {['Red', 'Apricot', 'Black', 'Black & White', 'Silver', 'Tan'].map(c => (<label key={c} className="flex items-center"><input type="checkbox" checked={filters.colors.includes(c)} onChange={() => handleFilterChange('colors', c)} /><span>{c}</span></label>))}</div>
-                        <div className="mb-6"><h4 className="font-bold mb-2">Price (VND)</h4><input type="range" min="0" max="20000000" step="500000" value={filters.price.max} onChange={(e) => handleFilterChange('price', { ...filters.price, max: Number(e.target.value) })} className="w-full"/><div className="flex justify-between text-sm"><span>0</span><span>{filters.price.max.toLocaleString()}</span></div></div>
+                        <div className="mb-6"><h4 className="font-bold mb-2">Price (VND)</h4><input type="range" min="0" max="20000000" step="500000" value={filters.price.max} onChange={(e) => handleFilterChange('price', { ...filters.price, max: Number(e.target.value) })} className="w-full" /><div className="flex justify-between text-sm"><span>0</span><span>{filters.price.max.toLocaleString()}</span></div></div>
                         <div><h4 className="font-bold mb-2">Breed</h4> {['Small', 'Medium', 'Large'].map(b => (<label key={b} className="flex items-center"><input type="checkbox" checked={filters.breeds.includes(b)} onChange={() => handleFilterChange('breeds', b)} /><span>{b} Dog</span></label>))}</div>
                     </aside>
                     <main className="w-full lg:w-3/4">
