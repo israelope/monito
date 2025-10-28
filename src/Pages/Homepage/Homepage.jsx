@@ -6,10 +6,12 @@ import Products from './Products'
 import Sellers from './Sellers'
 import Blog from './Blog'
 import Footer from '../../Components/Footer'
+import Navbar from '../../Components/Navbar'
 
 const Homepage = () => {
   return (
     <>
+    <Navbar/>
     <Hero/>
     <Pets/>
     <FriendCard/>
