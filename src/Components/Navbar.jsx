@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         // Added min-h-[76px] to prevent layout shift when search opens
-        <header className=" container mx-auto px-4 sm:px-8 py-5 min-h-[76px] sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
+        <header className=" container mx-auto px-4 sm:px-8 py-5 min-h-[76px] sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm w-100%">
             {/* This div contains the standard navbar elements */}
             {/* NEW: It's now hidden when isSearchOpen is true */}
             <div className={`${isSearchOpen ? 'hidden' : 'flex'} justify-between items-center`}>

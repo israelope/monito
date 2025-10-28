@@ -50,7 +50,7 @@ const Hero = () => {
                     {/* --- Desktop-Only Layered Image --- */}
                     <div className="hidden lg:flex lg:w-7/12 h-[550px] relative items-center justify-center">
                         <div className="absolute w-[90%] h-[90%] bg-[#FDF3DE] rounded-bl-[80px] bottom-0 right-0"></div>
-                        <div className="absolute w-[85%] h-full bg-[#003459] rounded-tl-[80px] rounded-bl-[80px] bottom-0 left-0"></div>
+                        <div className="absolute w-[85%] h-full  rounded-tl-[80px] rounded-bl-[80px] bottom-0 left-0"></div>
                         <img 
                             src={HeroImg} 
                             alt="Woman holding a Corgi dog" 
