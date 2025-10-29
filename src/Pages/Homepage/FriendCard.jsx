@@ -7,7 +7,7 @@ const FriendCard = () => {
         <main className='px-4 sm:px-8 lg:px-20 py-10 sm:py-16'>
             <div className='rounded-3xl overflow-hidden'>
                 
-                {/* --- DESKTOP VIEW (hidden on mobile, completely unchanged) --- */}
+                {/* --- DESKTOP VIEW (hidden on mobile) --- */}
                 <div 
                     className='hidden lg:flex flex-row items-center bg-cover bg-center bg-no-repeat'
                     style={{
@@ -36,10 +36,10 @@ const FriendCard = () => {
                     </div>
                 </div>
 
-                {/* --- CORRECTED MOBILE VIEW --- */}
-                <div className='lg:hidden flex flex-col h-[680px]'>
-                    {/* Top 45% of the card with a cream background for text */}
-                    <div className='bg-[#FCEED5] h-[45%] flex flex-col items-center justify-center p-8 text-center'>
+                {/* --- MOBILE VIEW (hidden on desktop) --- */}
+                <div className='lg:hidden flex flex-col'>
+                    {/* Top section with a cream background for text (height is determined by content) */}
+                    <div className='bg-[#FCEED5] flex flex-col items-center justify-center p-8 text-center'>
                         <h1 className='text-4xl font-bold text-[#003459] leading-tight'>One More Friend</h1>
                         <h2 className="text-2xl font-semibold text-[#003459] mt-2">Thousands More Fun!</h2>
                         <p className="mt-4 max-w-xs mx-auto text-sm">
@@ -55,10 +55,9 @@ const FriendCard = () => {
                         </div>
                     </div>
 
-                    {/* Bottom 55% of the card with a blue background for the image */}
-                    <div className='bg-[#003459] h-[55%]'>
+                    {/* Bottom section with a blue background that grows to fill remaining space */}
+                    <div className='bg-[#003459] flex-grow'>
                         <img 
-                            // --- THIS IS THE LINE I CHANGED ---
                             className='h-full w-full object-cover' 
                             src={MoreImg} 
                             alt="Happy dog with owner" 
