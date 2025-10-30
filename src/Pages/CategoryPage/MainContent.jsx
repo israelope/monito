@@ -71,7 +71,7 @@ const MainContent = () => {
       {isFilterOpen && (
         // 1. ADD onClick TO THE OVERLAY to close it
         <div
-          className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="lg:hidden fixed inset-0 bg-transparent bg-opacity-50 z-40"
           onClick={() => setIsFilterOpen(false)}
         >
           {/* 2. ADD onClick with stopPropagation to the panel */}
