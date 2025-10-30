@@ -6,9 +6,9 @@ const FriendCard = () => {
     return (
         <main className='px-4 sm:px-8 lg:px-20 py-10 sm:py-16'>
             <div className='rounded-3xl overflow-hidden'>
-                
+
                 {/* --- DESKTOP VIEW (hidden on mobile) --- */}
-                <div 
+                <div
                     className='hidden lg:flex flex-row items-center bg-cover bg-center bg-no-repeat'
                     style={{
                         backgroundImage: `url(${More})`,
@@ -57,10 +57,10 @@ const FriendCard = () => {
 
                     {/* Bottom section with a blue background that grows to fill remaining space */}
                     <div className='bg-[#003459] flex-grow'>
-                        <img 
-                            className='h-full w-full object-cover' 
-                            src={MoreImg} 
-                            alt="Happy dog with owner" 
+                        <img
+                            className='h-full w-full object-cover'
+                            src={MoreImg}
+                            alt="Happy dog with owner"
                         />
                     </div>
                 </div>

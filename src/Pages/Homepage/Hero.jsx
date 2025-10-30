@@ -14,10 +14,10 @@ const Hero = () => {
                     
                     {/* --- Text Content Section --- */}
                     <div className='lg:w-5/12 text-center lg:text-left py-12 z-10'>
-                        <h1 className='text-5xl lg:text-6xl font-extrabold text-[#003459] leading-tight'>
+                        <h1 className='text-5xl lg:text-6xl  font-[ABeeZee] text-[#003459] leading-tight'>
                             One More Friend
                         </h1>
-                        <h2 className="text-3xl lg:text-5xl font-bold text-[#003459] mt-2 flex items-center justify-center lg:justify-start gap-2">
+                        <h2 className="text-3xl lg:text-5xl  font-[ABeeZee] font-extrabold text-[#003459] mt-2 flex items-center justify-center lg:justify-start gap-2">
                             Thousands more fun!
                             <span className="w-2 h-2 bg-[#003459] rounded-full hidden lg:block"></span>
                         </h2>

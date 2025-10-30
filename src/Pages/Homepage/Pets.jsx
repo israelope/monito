@@ -3,7 +3,7 @@ import { petsData } from '../../Constants/Index';
 import { Link } from "react-router-dom";
 
 // No changes needed for PetCard
-const PetCard = ({ pet }) => (
+ const PetCard = ({ pet }) => (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
         <img src={pet.image} alt={pet.name} className="w-full h-48 object-cover" />
         <div className="p-4 flex flex-col flex-grow">
