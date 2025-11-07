@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPlayCircle } from 'react-icons/fa';
 import HeroImg from '../../assets/img/HeroImg.png';
+import {NavLink } from 'react-router-dom';
 import Navbar from '../../Components/Navbar';
 
 const Hero = () => {

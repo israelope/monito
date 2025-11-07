@@ -26,7 +26,7 @@ const Navbar = () => {
         <header className="container mx-auto px-4 sm:px-8 py-5 min-h-[76px] sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm w-full">
             {/* Standard navbar content (hidden when search is open) */}
             <div className={`${isSearchOpen ? 'hidden' : 'flex'} justify-between items-center`}>
-                
+
                 {/* Mobile Menu Toggle */}
                 <div className="lg:hidden">
                     <button onClick={toggleMenu} className="text-2xl text-[#003459]">
@@ -44,8 +44,7 @@ const Navbar = () => {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            `text-[#003459] font-bold hover:underline decoration-[#003459] underline-offset-4 transition-all duration-200 ${
-                                isActive ? 'underline decoration-2' : ''
+                            `text-[#003459] font-bold hover:underline decoration-[#003459] underline-offset-4 transition-all duration-200 ${isActive ? 'underline decoration-2' : ''
                             }`
                         }
                     >
@@ -54,8 +53,7 @@ const Navbar = () => {
                     <NavLink
                         to="/Category"
                         className={({ isActive }) =>
-                            `text-[#003459] font-bold hover:underline decoration-[#003459] underline-offset-4 transition-all duration-200 ${
-                                isActive ? 'underline decoration-2' : ''
+                            `text-[#003459] font-bold hover:underline decoration-[#003459] underline-offset-4 transition-all duration-200 ${isActive ? 'underline decoration-2' : ''
                             }`
                         }
                     >
@@ -64,8 +62,7 @@ const Navbar = () => {
                     <NavLink
                         to="/About"
                         className={({ isActive }) =>
-                            `text-[#003459] font-bold hover:underline decoration-[#003459] underline-offset-4 transition-all duration-200 ${
-                                isActive ? 'underline decoration-2' : ''
+                            `text-[#003459] font-bold hover:underline decoration-[#003459] underline-offset-4 transition-all duration-200 ${isActive ? 'underline decoration-2' : ''
                             }`
                         }
                     >
@@ -74,8 +71,7 @@ const Navbar = () => {
                     <NavLink
                         to="/Contact"
                         className={({ isActive }) =>
-                            `text-[#003459] font-bold hover:underline decoration-[#003459] underline-offset-4 transition-all duration-200 ${
-                                isActive ? 'underline decoration-2' : ''
+                            `text-[#003459] font-bold hover:underline decoration-[#003459] underline-offset-4 transition-all duration-200 ${isActive ? 'underline decoration-2' : ''
                             }`
                         }
                     >
@@ -128,19 +124,17 @@ const Navbar = () => {
                     </button>
                 </div>
             )}
-            
+
             {/* --- MOBILE DROPDOWN MENU --- */}
             <div
-                className={`absolute top-full left-0 w-full bg-white shadow-lg lg:hidden transition-transform duration-300 ease-in-out z-10 ${
-                    isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-[150%]'
-                }`}
+                className={`absolute top-full left-0 w-full bg-white shadow-lg lg:hidden transition-transform duration-300 ease-in-out z-10 ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-[150%]'
+                    }`}
             >
                 <div className="flex flex-col items-center space-y-6 p-8">
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            `text-[#003459] font-bold text-lg ${
-                                isActive ? 'underline decoration-[#003459] decoration-2 underline-offset-4' : ''
+                            `text-[#003459] font-bold text-lg ${isActive ? 'underline decoration-[#003459] decoration-2 underline-offset-4' : ''
                             }`
                         }
                         onClick={toggleMenu}
@@ -150,8 +144,7 @@ const Navbar = () => {
                     <NavLink
                         to="/Category"
                         className={({ isActive }) =>
-                            `text-[#003459] font-bold text-lg ${
-                                isActive ? 'underline decoration-[#003459] decoration-2 underline-offset-4' : ''
+                            `text-[#003459] font-bold text-lg ${isActive ? 'underline decoration-[#003459] decoration-2 underline-offset-4' : ''
                             }`
                         }
                         onClick={toggleMenu}
@@ -161,8 +154,7 @@ const Navbar = () => {
                     <NavLink
                         to="/About"
                         className={({ isActive }) =>
-                            `text-[#003459] font-bold text-lg ${
-                                isActive ? 'underline decoration-[#003459] decoration-2 underline-offset-4' : ''
+                            `text-[#003459] font-bold text-lg ${isActive ? 'underline decoration-[#003459] decoration-2 underline-offset-4' : ''
                             }`
                         }
                         onClick={toggleMenu}
@@ -172,8 +164,7 @@ const Navbar = () => {
                     <NavLink
                         to="/Contact"
                         className={({ isActive }) =>
-                            `text-[#003459] font-bold text-lg ${
-                                isActive ? 'underline decoration-[#003459] decoration-2 underline-offset-4' : ''
+                            `text-[#003459] font-bold text-lg ${isActive ? 'underline decoration-[#003459] decoration-2 underline-offset-4' : ''
                             }`
                         }
                         onClick={toggleMenu}
