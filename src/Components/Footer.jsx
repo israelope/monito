@@ -1,5 +1,6 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import Logo from '../assets/icons/Logo.png';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -29,10 +30,11 @@ const Footer = () => {
                 {/* --- NAVIGATION AND SOCIALS (No changes below) --- */}
                 <div className="flex flex-col md:flex-row justify-between items-center py-10 mt-8">
                     <nav className="flex flex-wrap justify-center gap-x-6 sm:gap-x-8 gap-y-4 text-[#00171F] font-semibold order-2 md:order-1 mt-6 md:mt-0">
-                        <a href="#" className="hover:underline">Home</a>
-                        <a href="#" className="hover:underline">Category</a>
-                        <a href="#" className="hover:underline">About</a>
-                        <a href="#" className="hover:underline">Contact</a>
+                        <NavLink to="/" className="hover:underline">Home </NavLink>
+                        <NavLink to="/Category" className="hover:underline">Category </NavLink>
+                        <NavLink to="/About" className="hover:underline">About </NavLink>
+                        <NavLink to="/Contact" className="hover:underline">Contact </NavLink>
+                        
                     </nav>
                     
                     <div className="flex space-x-6 text-[#00171F] text-2xl order-1 md:order-2">
